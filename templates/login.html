@@ -1,0 +1,98 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+{% csrf_token %}
+<html lang="en">
+<head>
+	<title>Mercury Messenger</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="../media/assets/fav-icons/favicon.ico">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../media/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../media/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../media/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../media/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<form class="login100-form validate-form" id="form_django" method="POST">
+					{% csrf_token %}
+					<span class="login100-form-title p-b-70">Welcome!</span>
+					<span class="login100-form-avatar">
+						<img src="../../statics/logo.png" alt="logo">
+					</span>
+
+					<div class="wrap-input100 validate-input m-t-55 m-b-35">
+						<input id="input_user" class="input100" type="text" name="username" placeholder="Nome de usuário">
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-50" >
+						<input id="input_password" class="input100" type="password" name="password" placeholder="Senha">
+					</div>
+
+					<div id="errormsg" style="color:#f22; padding-bottom: 20px;"></div>
+
+					<div class="container-login100-form-btn">
+						<button id="btn_login" type="submit" class="login100-form-btn" name="submit">Entrar</button>
+					</div>
+
+					<ul class="login-more p-t-90">
+						<li>
+							<span class="txt1">Don't have an account? </span>
+							<a href="/create" class="txt2">Create your account</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="../media/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../media/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../media/vendor/bootstrap/js/popper.js"></script>
+	<script src="../media/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../media/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../media/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../media/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../media/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<!-- <script src="../media/js/main.js"></script> -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
